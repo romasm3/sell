@@ -1,2 +1,3 @@
-# sell
+# sell planets properties everything what need
 sell properties
+vooooooooooooooooooooooooooooooooooooooooooooooo
