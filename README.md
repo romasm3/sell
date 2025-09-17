@@ -1,53 +1,92 @@
-
+<!DOCTYPE html>
 <html lang="lt">
 <head>
   <meta charset="UTF-8">
-  <title>Airbnb Klonas</title>
+  <title>Mano Puslapis</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; }
-    header { background: #FF385C; color: white; padding: 1rem; }
-    nav { display: flex; justify-content: space-between; align-items: center; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; }
-    .search { text-align: center; margin: 2rem; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 2rem; }
-    .card { border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .card img { width: 100%; height: 180px; object-fit: cover; }
-    .card h3 { margin: 10px; }
-    .card p { margin: 10px; color: #555; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+    .hero {
+      background: url('https://picsum.photos/1200/400') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
+
   <header>
+    <h1>Mano Puslapis</h1>
     <nav>
-      <h1>Airbnb Klonas</h1>
-      <div>
-        <a href="#">Prisijungti</a>
-        <a href="#">Registruotis</a>
-      </div>
+      <a href="#">Pradžia</a>
+      <a href="#">Apie</a>
+      <a href="#">Kontaktai</a>
     </nav>
   </header>
 
-  <div class="search">
-    <input type="text" placeholder="Ieškoti vietos..." style="padding:10px; width:60%; border-radius:8px; border:1px solid #ccc;">
-    <button style="padding:10px 20px; border:none; border-radius:8px; background:#FF385C; color:white;">Ieškoti</button>
-  </div>
+  <section class="hero">
+    <h1>Sveikas atvykęs!</h1>
+    <p>Čia mano pirmasis bandymas su HTML ir CSS 🚀</p>
+  </section>
 
-  <section class="cards">
+  <section class="content">
     <div class="card">
-      <img src="https://picsum.photos/400/200?random=1" alt="būstas">
-      <h3>Butas Vilniuje</h3>
-      <p>€45 už naktį</p>
+      <h2>Kortelė 1</h2>
+      <p>Čia gali būti aprašymas apie tavo projektą.</p>
     </div>
     <div class="card">
-      <img src="https://picsum.photos/400/200?random=2" alt="būstas">
-      <h3>Namukas prie ežero</h3>
-      <p>€70 už naktį</p>
+      <h2>Kortelė 2</h2>
+      <p>Kortelės leidžia gražiai išdėstyti informaciją.</p>
     </div>
     <div class="card">
-      <img src="https://picsum.photos/400/200?random=3" alt="būstas">
-      <h3>Loftas Kaune</h3>
-      <p>€55 už naktį</p>
+      <h2>Kortelė 3</h2>
+      <p>Čia galima įdėti nuotraukas, tekstą ar nuorodas.</p>
     </div>
   </section>
+
+  <footer>
+    <p>© 2025 Mano Puslapis. Sukurta su ❤️</p>
+  </footer>
+
 </body>
 </html>
