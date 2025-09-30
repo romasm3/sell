@@ -26,37 +26,3 @@
 
 
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  background: #f4f4f9;
-  color: #333;
-}
-
-header {
-  background: #0077ff;
-  color: white;
-  padding: 20px;
-}
-
-main {
-  padding: 40px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background: #0077ff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #005bcc;
-}
-
