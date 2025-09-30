@@ -2,27 +2,27 @@
 <html lang="lt">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mano GitHub Webas</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Prisijungimas</title>
+  <script>
+    function login(event) {
+      event.preventDefault();
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      if (user === "admin" && pass === "1234") {
+        alert("Prisijungimas sėkmingas!");
+      } else {
+        alert("Neteisingi duomenys.");
+      }
+    }
+  </script>
 </head>
 <body>
-  <header>
-    <h1>Sveikas atvykęs į mano puslapį 🚀</h1>
-  </header>
-
-  <main>
-    <p>Šitas webas sukurtas naudojant <b>GitHub Pages</b>.</p>
-    <button id="myButton">Paspausk mane</button>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Mano vardas</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <h2>Prisijunk</h2>
+  <form onsubmit="login(event)">
+    <input type="text" id="username" placeholder="Vartotojo vardas" required><br><br>
+    <input type="password" id="password" placeholder="Slaptažodis" required><br><br>
+    <button type="submit">Prisijungti</button>
+  </form>
 </body>
 </html>
-
-
-
